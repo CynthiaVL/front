@@ -57,4 +57,9 @@ p{
 
 .container-2{
     background-color: $dark;
+    color: $tertiary;
+    .btn{
+        background-color: $tertiary;
+        color: $dark;
+    }
 }
