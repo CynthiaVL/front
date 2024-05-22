@@ -1,24 +1,26 @@
 @import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import 'custom';
 
-main{
-    margin-bottom: 250px;
-}
 
-footer.footer{
+footer.footer {
     padding: 15px;
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+section, article {
+    margin: 0;
+    padding: 0;
 }
 
 p{
     font-size: 18px;
 }
 
-.hero-scene{
+.hero-scene {
     position: relative;
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         top: 0;
@@ -29,12 +31,10 @@ p{
         background-size: cover;
         filter : brightness(0.7);
     }
-    *{
-        //Positionner les éléments devant le before
+    * {
         position: relative;
     }
-
-    .hero-scene-content{
+    .hero-scene-content {
         height: 300px;
         display: flex;
         flex-direction: column;
@@ -49,4 +49,12 @@ p{
 
 .navbar-dark, .navbar[data-bs-theme=dark] {
     --bs-navbar-color: $tertiary;
+}
+
+.container-1{
+    background-color: $bluelight;
+}
+
+.container-2{
+    background-color: $dark;
 }
