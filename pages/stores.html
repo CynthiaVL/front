@@ -3,3 +3,118 @@
         <h1>Nos magasins</h1>
     </div>
 </div>
+
+<section>
+    <article class="container-1 p-4">
+        <h2 class="text-center text-secondary mb-4">Tous nos magasins</h2>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-title text-center">
+                            <h5 class="card-title">Bordeaux</h5>
+                        </div>
+                        <img src="../images/bordeaux.jpg" class="card-img-top" alt="Bordeaux">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Adresse : 33 Rue de Bordeaux <br> 33000 Bordeaux.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-title text-center">
+                            <h5 class="card-title">Lille</h5>
+                        </div>
+                        <img src="../images/lille.jpg" class="card-img-top" alt="Lille">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Adresse : 59 Rue de Lille <br> 59000 Lille.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-title text-center">
+                            <h5 class="card-title">Nantes</h5>
+                        </div>
+                        <img src="../images/nante.jpg" class="card-img-top" alt="Nantes">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Adresse : 44 Rue de Nantes <br> 44000 Nantes.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-title text-center">
+                            <h5 class="card-title">Paris</h5>
+                        </div>
+                        <img src="../images/paris.jpg" class="card-img-top" alt="Paris">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Adresse : 75 Rue de Paris <br> 75000 Paris.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 d-flex justify-content-center">
+                    <div class="card" style="width: 18rem;">
+                        <div class="card-title text-center">
+                            <h5 class="card-title">Toulouse</h5>
+                        </div>
+                        <img src="../images/toulouse.jpg" class="card-img-top" alt="Toulouse">
+                        <div class="card-body text-center">
+                            <p class="card-text">
+                                Adresse : 31 Rue de Toulouse <br> 31000 Toulouse.
+                            </p>
+                            <a href="#" class="btn btn-primary">Go</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+           
+    <article class="container-1 p-4">
+        <h2 class="text-center text-secondary mb-4">Trouvez le magasin le plus proche de vous</h2>
+        <form>
+        <div class="mb-3 text-center">
+            <label>Choississez votre magasin :</label>
+            <div class="d-flex justify-content-center">
+                <select class="form-select form-select-sm w-25 text-center" aria-label="Small select example">
+                    <option>Bordeaux</option>
+                    <option>Lille</option>
+                    <option>Nantes</option>
+                    <option>Paris</option>
+                    <option>Toulouse</option>
+                </select>
+            </div>
+            <div class="text-center">
+                <button class="btn btn-secondary m-4" id="btn-validation-shop">Valider</button>
+            </div>
+        </div>
+        <div class="mb-3">
+            <p class="text-center"> OU </p>
+        </div>
+        <div class="mb-3 text-center">
+            <label for="code_postal">Entrez votre code postal:</label>
+            <div>
+                <input type="text" id="code_postal" name="code_postal">
+            </div>
+            <div class="text-center">
+                <button class="btn btn-secondary m-4" id="btn-validation-cp">Valider</button>
+            </div>
+        </div>
+        </form>
+    </article>
+</section>
+
+  <!-- Ici inséré un code qui permet de trouver le bon magasin en fonction de code postal-->
