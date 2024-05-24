@@ -4,14 +4,72 @@
     </div>
 </div>
 
+<form>
+    <div class="container-1 p-4">
+        <div class="container-fluid">
+            <div class="filter-bar d-flex justify-content-around">
+                <div class="col-3 filter-header text-center" data-toggle="filter" data-target="#priceFilter">
+                    <label for="price" class="p-4">Prix</label>
+                    <div class="filter-container d-flex justify-content-between align-items-center">
+                        <span class="range-label">0</span>
+                        <div class="slider mx-3">
+                            <input type="range" min="0" max="150" value="0" id="priceMin" class="form-range">
+                            <input type="range" min="0" max="150" value="150" id="priceMax" class="form-range">
+                        </div>
+                        <span class="range-label">150</span>
+                    </div>
+                </div>
+                <div class="col-3 filter-header text-center" data-toggle="filter" data-target="#genreFilter">
+                    <div class="filter-container" id="genreFilter">
+                        <label for="genreSelect" class="p-4">Genre</label>
+                            <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="rpg">
+                                    <label class="form-check-label" for="genre1">RPG</label>
+                            </div>
+                            <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="mmo">
+                                    <label class="form-check-label" for="genre2">MMO</label>
+                            </div>
+                            <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="action">
+                                    <label class="form-check-label" for="genre2">Action</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="sport">
+                                <label class="form-check-label" for="genre2">Sport</label>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="romantique">
+                                <label class="form-check-label" for="genre2">Romantique</label>
+                            </div>
+                            <!-- Ajouter des genres ici -->
+                        </select>
+                    </div>
+                </div>
+                <div class="col-3 filter-header text-center" data-toggle="filter" data-target="#priceFilter">
+                    <label for="age" class="p-4">Age</label>
+                    <div class="filter-container d-flex justify-content-between align-items-center">
+                        <span class="range-label">0</span>
+                        <div class="slider mx-3">
+                            <input type="range" min="0" max="18" value="0" id="ageMin" class="form-range">
+                            <input type="range" min="0" max="18" value="18" id="ageMax" class="form-range">
+                        </div>
+                        <span class="range-label">18</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+
 <section>
-    <article class="container-1 p-4">
+    <article class="container-2 p-4">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">Mario</h3>
+                            <h3 class="card-title text-secondary" id="game-title">Mario</h3>
                         </div>
                         <img src="../images/mario.jpg" class="card-img-top" alt="Mario" id="game-img">
                         <div class="card-body text-center">
@@ -27,9 +85,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">Minecraft</h3>
+                            <h3 class="card-title text-secondary" id="game-title">Minecraft</h3>
                         </div>
                         <img src="../images/minecraft.jpg" class="card-img-top" alt="Minecraft" id="game-img">
                         <div class="card-body text-center">
@@ -45,9 +103,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">Pac Man</h3>
+                            <h3 class="card-title text-secondary" id="game-title">Pac Man</h3>
                         </div>
                         <img src="../images/pacman.jpg" class="card-img-top" alt="Pacman" id="game-img">
                         <div class="card-body text-center">
@@ -63,9 +121,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">Call Of Duty</h3>
+                            <h3 class="card-title text-secondary" id="game-title">Call Of Duty</h3>
                         </div>
                         <img src="../images/callof.jpg" class="card-img-top" alt="Callof" id="game-img">
                         <div class="card-body text-center">
@@ -81,9 +139,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">Fifa</h3>
+                            <h3 class="card-title text-secondary" id="game-title">Fifa</h3>
                         </div>
                         <img src="../images/fifa.jpg" class="card-img rounded w-100" alt="Fifa" id="game-img">
                         <div class="card-body text-center">
@@ -99,9 +157,9 @@
                     </div>
                 </div>
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
-                    <div class="card container-2" style="width: 18rem;">
+                    <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-purple" id="game-title">World of Warcraft</h3>
+                            <h3 class="card-title text-secondary" id="game-title">World of Warcraft</h3>
                         </div>
                         <img src="../images/wow.jpg" class="card-img-top" alt="Wow" id="game-img">
                         <div class="card-body text-center">
