@@ -12026,4 +12026,18 @@ p {
 .container-2 .btn {
   background-color: #3ffc3b;
   color: #18546D;
+}
+
+.card-profil, .card-order {
+  background-color: #18546D;
+  border-color: #94dbfa;
+  color: #94dbfa;
+}
+
+.modal .card {
+  background-color: #18546D;
+  color: #94dbfa;
+}
+.modal .btn {
+  background-color: #3ffc3b;
 }/*# sourceMappingURL=main.css.map */

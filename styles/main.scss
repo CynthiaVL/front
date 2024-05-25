@@ -63,3 +63,19 @@ p{
         color: $dark;
     }
 }
+
+.card-profil, .card-order{
+    background-color: $dark;
+    border-color: $bluelight;
+    color: $bluelight;
+}
+
+.modal{
+    .card{
+        background-color: $dark;
+        color: $bluelight;
+    }
+    .btn{
+        background-color: $tertiary;
+    }
+}

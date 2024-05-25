@@ -69,12 +69,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">Mario</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#marioModal">Mario</a></h3>
                         </div>
                         <img src="../images/mario.jpg" class="card-img-top" alt="Mario" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -87,12 +88,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">Minecraft</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#minecraftModal">Minecraft</a></h3>
                         </div>
                         <img src="../images/minecraft.jpg" class="card-img-top" alt="Minecraft" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -105,12 +107,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">Pac Man</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#pacmanModal">Pac Man</a></h3>
                         </div>
                         <img src="../images/pacman.jpg" class="card-img-top" alt="Pacman" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -123,12 +126,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">Call Of Duty</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#callofModal">Call Of Duty</a></h3>
                         </div>
                         <img src="../images/callof.jpg" class="card-img-top" alt="Callof" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -141,12 +145,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">Fifa</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#fifaModal">Fifa</a></h3>
                         </div>
                         <img src="../images/fifa.jpg" class="card-img rounded w-100" alt="Fifa" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -159,12 +164,13 @@
                 <div class="col-md-4 mb-4 d-flex justify-content-center">
                     <div class="card container-1" style="width: 18rem;">
                         <div class="card-title text-center p-4">
-                            <h3 class="card-title text-secondary" id="game-title">World of Warcraft</h3>
+                            <h3 class="card-title text-secondary" id="game-title"><a type="button" data-bs-toggle="modal" data-bs-target="#wowModal">World of Warcraft</a></h3>
                         </div>
                         <img src="../images/wow.jpg" class="card-img-top" alt="Wow" id="game-img">
                         <div class="card-body text-center">
                             <p class="card-text" id="game-price">
                                 Prix :
+                            </p>
                             <p class="card-text" id="game-age">
                                 Age :
                             </p>
@@ -178,3 +184,193 @@
         </div>
     </article>
 </section>
+
+
+<!-- Modales -->
+
+
+<div class="modal text-center" tabindex="-1" id="marioModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">Mario</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Ce jeu familiale se joue entre amis ou en famille. Accessible à tout âge. Venez découvrir l'univers de Mario.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 75€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 7 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Ordi, Psp, PlayStation, Wii
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 15
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal text-center" tabindex="-1" id="minecraftModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">Minecraft</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Construisez dans ce jeu aux multiples possibilités.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 80€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 12 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Ordi, Psp, PlayStation
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 12
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal text-center" tabindex="-1" id="pacmanModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">Pac Man</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Jouez à Pac Man pour vous détendre quand vous avez peu de temps.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 20€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 0 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Ordi, Psp, Wii
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 8
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal text-center" tabindex="-1" id="callofModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">Call Of Duty</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Choississez votre arme et soyez le dernier survivant.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 80€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 16 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Psp, PlayStation
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 21
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal text-center" tabindex="-1" id="fifaModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">Fifa</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Venez jouer au foot avec vos joueurs préférés du monde entier.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 80€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 8 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Psp, PlayStation
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 21
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal text-center" tabindex="-1" id="wowModal">
+    <div class="modal-dialog">
+        <div class="card">
+            <div class="modal-header">
+                <h4 class="modal-titre text-center text-purple" id="game-title">World of Warcraft</h4>
+            </div>
+            <div class="modal-body">
+                <p class="game-description">
+                    <strong>Description : </strong>Venez découvrir l'univers infini de World of Warcraft. Incarnez un sorcier, un elfe ou un guerrier et vivez votre propre aventure.
+                </p>
+                <p class="price">
+                    <strong>Prix :</strong> 60€
+                </p>
+                <p id="game-age">
+                    <strong>Age :</strong> 12 et +
+                </p>
+                <p id="game-pegi">
+                    <strong>Pour :</strong> Ordi, PlayStation
+                </p>
+                <p id="game-quantity">
+                    <strong>Quantité :</strong> 12
+                </p>
+            </div>
+            <div class="modal-footer d-flex justify-content-between">
+                <button type="button" class="btn" id="addOrder">Ajouter au panier<i class="m-3 bi bi-bag-check-fill"></i></button>
+                <button type="button" class="btn" data-bs-dismiss="modal">Fermer<i class="m-3 bi bi-x"></i></button>
+            </div>
+        </div>
+    </div>
+</div>
